@@ -168,7 +168,7 @@ animate();
 
 addEventListener('keydown', function (e) {
     if (e.key == 'ArrowUp' && !gameOver) {
-        player.velocity.y = -10;
+        player.velocity.y = -9;
         keyPressed = true;
         scrollOffset = 3
         player.gravity= 0.5
