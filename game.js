@@ -620,27 +620,3 @@ addEventListener('keydown', function (e) {
     }
 
 })
-addEventListener('click', function () {
-     
-        player.velocity.y = -9;
-        keyPressed = true;
-        scrollOffset = 3
-        player.gravity= 0.5
-
-    
-     if(gameOver){
-        player.velocity.y = 0;
-        keyPressed = false;
-        scrollOffset = 0
-        player.gravity= 0
-        context.fillStyle = 'red'
-        context.font = '60px Arial'
-        context.fillText("GAME OVER !!", 400,300)
-        window.location.reload()
-        wascroll = 0
-    }
-    else{
-
-    }
-
-})
